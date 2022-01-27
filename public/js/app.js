@@ -26,7 +26,7 @@ weatherForm.addEventListener("submit", (e) => {
             p2.textContent =
                 "It's now " +
                 data.temperature +
-                "degrees, feels like " +
+                " degrees, feels like " +
                 data.feelslike +
                 ". " +
                 "It's " +

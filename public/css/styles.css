@@ -51,3 +51,8 @@ button{
     color: white;
     padding: 8px;
 }
+#weather_img{
+    width: 48px;
+    margin-top: 16px;
+    border-radius: 8px;
+}

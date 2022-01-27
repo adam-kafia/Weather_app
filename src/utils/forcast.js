@@ -14,9 +14,16 @@ const forecast = (latitude, longitude, callback) => {
             callback("Unable to find location", undefined);
             debugger;
         } else {
-            const { temperature, feelslike } = body.current;
+            const { temperature, feelslike, humidity } = body.current;
             const weather_descriptions = body.current.weather_descriptions[0];
-            callback(undefined, { temperature, feelslike, weather_descriptions });
+            const weather_icons = body.current.weather_icons[0];
+            callback(undefined, {
+                temperature,
+                feelslike,
+                weather_descriptions,
+                humidity,
+                weather_icons,
+            });
         }
     });
 };
